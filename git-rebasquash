@@ -1,0 +1,3 @@
+#!/bin/bash
+BRANCH=${1:-main}
+git rebase -i --autosquash $BRANCH
