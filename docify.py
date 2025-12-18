@@ -1,4 +1,11 @@
 #!/bin/python3
+# Copyright Red Hat
+#
+# docify.py - Convert command output into MD/groff example notation.
+#
+# This file is part of the snapshot manager project.
+#
+# SPDX-License-Identifier: Apache-2.0
 from subprocess import run, PIPE, STDOUT
 import sys
 

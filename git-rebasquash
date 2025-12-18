@@ -1,3 +1,10 @@
 #!/bin/bash
+# Copyright Red Hat
+#
+# git-rebasquash - shortcut for ``git rebase -i --autosquash $BRANCH``
+#
+# This file is part of the snapshot manager project.
+#
+# SPDX-License-Identifier: Apache-2.0
 BRANCH=${1:-main}
 git rebase -i --autosquash $BRANCH

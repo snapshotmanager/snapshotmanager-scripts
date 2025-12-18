@@ -1,2 +1,9 @@
 #!/bin/bash
+# Copyright Red Hat
+#
+# git-branchlog - shortcut for ``git log main..HEAD``
+#
+# This file is part of the snapshot manager project.
+#
+# SPDX-License-Identifier: Apache-2.0
 git log main..HEAD $@

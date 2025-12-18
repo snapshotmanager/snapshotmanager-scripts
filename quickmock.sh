@@ -1,4 +1,11 @@
 #!/bin/bash
+# Copyright Red Hat
+#
+# quickmock.sh - Run a quick mock build from HEAD using the in-tree spec file
+#
+# This file is part of the snapshot manager project.
+#
+# SPDX-License-Identifier: Apache-2.0
 RPMBUILDDIR=~/rpmbuild
 MOCKROOT="fedora-$(rpm --eval '%{fedora}')-x86_64"
 DIST="$(rpm --eval '%{dist}')"

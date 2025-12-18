@@ -1,2 +1,9 @@
 #!/bin/bash
+# Copyright Red Hat
+#
+# git-resolves - fugly shell script to generate sorted
+#
+# This file is part of the snapshot manager project.
+#
+# SPDX-License-Identifier: Apache-2.0
 git branchlog | grep -E 'Resolves|Related' | sed 's/^[[:space:]]*//' | sort | uniq

@@ -1,4 +1,11 @@
 #!/bin/bash
+# Copyright Red Hat
+#
+# mkrelease.sh - Update snapm/boom-boot style release metadata
+#
+# This file is part of the snapshot manager project.
+#
+# SPDX-License-Identifier: Apache-2.0
 set -euo pipefail
 
 log () {
@@ -47,7 +54,7 @@ if grep "version = \"${OLDVERSION}\"" pyproject.toml &>/dev/null; then
 fi
 
 log "Updating doc/conf.py file SHORTVERSION=${SHORTNEWVERSION}" 1>&2
-sed -i "s/$SHORTOLDVERSION/$SHORTNEWVERSION/" doc/conf.py
+sed -i "s/${SHORTOLDVERSION//./\\.}/$SHORTNEWVERSION/" doc/conf.py
 
 log "Updating RPM ${PROJECT} ${PROJECT}.spec file" 1>&2
 

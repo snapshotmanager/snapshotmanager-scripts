@@ -1,2 +1,9 @@
 #!/bin/bash
+# Copyright Red Hat
+#
+# git-userstats - shortcut for ``git shortlog -ns @~``
+#
+# This file is part of the snapshot manager project.
+#
+# SPDX-License-Identifier: Apache-2.0
 git shortlog -ns @~ 
