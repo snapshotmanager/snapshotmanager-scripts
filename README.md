@@ -11,6 +11,7 @@ release preparation.
 * **git-resolves** - fugly shell script to generate sorted
   "{Resolves,Related}: #XXX" tags from git commit logs.
 * **git-userstats** - shortcut for ``git shortlog -ns @~``
+* **git-yeet** - shortcut for ``git reset HEAD~1``
 * **mkrelease.sh** - Update snapm/boom-boot style release metadata
 * **quickmock.sh** - Run a quick mock build from HEAD using the in-tree spec file.
 
